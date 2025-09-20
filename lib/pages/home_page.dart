@@ -1,9 +1,10 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/colors.dart';
 import 'package:my_portfolio/constants/nav_items.dart';
-import 'package:my_portfolio/styles/style.dart';
+import 'package:my_portfolio/widgets/drawer_mobil.dart';
 import 'package:my_portfolio/widgets/header_for_mobil.dart';
-import 'package:my_portfolio/widgets/header_for_website.dart';
 import 'package:my_portfolio/widgets/site_logo.dart';
 
 class HomePage extends StatefulWidget {
@@ -14,40 +15,32 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final scaffoldKey = GlobalKey<ScaffoldState>();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: scaffoldKey,
       backgroundColor: CustomColor.scaffoldBg,
+      endDrawer: DrawerMobile(),
       body: ListView(
         scrollDirection: Axis.vertical,
         children: [
-          //Main Section
-          // HeaderForWebsite(),
-          HeaderForMobile(onLogoTap: () {}, onMenuTap: () {}),
-          //About Me Section
-          Container(
-            height: 500,
-            width: double.maxFinite,
-            color: Colors.blueGrey,
+          Builder(
+            builder: (context) {
+              return HeaderForMobile(
+                onLogoTap: () {},
+                onMenuTap: () {
+                  Scaffold.of(context).openEndDrawer();
+                  log("Menu Tapped");
+                },
+              );
+            },
           ),
-          //Projects Section
-          Container(
-            height: 500,
-            width: double.maxFinite,
-            color: Colors.blueGrey,
-          ),
-          //Contact Me Section
-          Container(
-            height: 500,
-            width: double.maxFinite,
-            color: Colors.blueGrey,
-          ),
-          //Footer Section
-          Container(
-            height: 100,
-            width: double.maxFinite,
-            color: Colors.blueGrey,
-          ),
+          Container(height: 500, color: Colors.blueGrey),
+          Container(height: 500, color: Colors.blueGrey),
+          Container(height: 500, color: Colors.blueGrey),
+          Container(height: 100, color: Colors.blueGrey),
         ],
       ),
     );

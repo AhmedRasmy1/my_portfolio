@@ -4,8 +4,8 @@ import 'package:my_portfolio/widgets/site_logo.dart';
 
 class HeaderForMobile extends StatelessWidget {
   const HeaderForMobile({super.key, this.onLogoTap, this.onMenuTap});
-  final void Function()? onLogoTap;
-  final void Function()? onMenuTap;
+  final VoidCallback? onLogoTap;
+  final VoidCallback? onMenuTap;
 
   @override
   Widget build(BuildContext context) {

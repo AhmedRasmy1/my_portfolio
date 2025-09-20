@@ -3,7 +3,7 @@ import 'package:my_portfolio/constants/colors.dart';
 
 class SiteLogo extends StatelessWidget {
   const SiteLogo({super.key, this.onTap});
-  final void Function()? onTap;
+  final VoidCallback? onTap;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(

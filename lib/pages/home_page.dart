@@ -11,8 +11,41 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Home Page')),
-      body: const Center(child: Text('Welcome to Ahmed HR Portfolio!')),
+      body: ListView(
+        scrollDirection: Axis.vertical,
+        children: [
+          //Main Section
+          Container(
+            height: 500,
+            width: double.maxFinite,
+            color: Colors.blueGrey,
+          ),
+          //About Me Section
+          Container(
+            height: 500,
+            width: double.maxFinite,
+            color: Colors.blueGrey,
+          ),
+          //Projects Section
+          Container(
+            height: 500,
+            width: double.maxFinite,
+            color: Colors.blueGrey,
+          ),
+          //Contact Me Section
+          Container(
+            height: 500,
+            width: double.maxFinite,
+            color: Colors.blueGrey,
+          ),
+          //Footer Section
+          Container(
+            height: 100,
+            width: double.maxFinite,
+            color: Colors.blueGrey,
+          ),
+        ],
+      ),
     );
   }
 }

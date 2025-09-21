@@ -6,6 +6,7 @@ import 'package:my_portfolio/constants/size.dart';
 import 'package:my_portfolio/widgets/drawer_mobil.dart';
 import 'package:my_portfolio/widgets/header_for_mobil.dart';
 import 'package:my_portfolio/widgets/header_for_website.dart';
+import 'package:my_portfolio/widgets/main_website_view.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -19,6 +20,8 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
+    final screenWidth = screenSize.width;
     return LayoutBuilder(
       builder: (context, constraints) {
         return Scaffold(
@@ -45,6 +48,7 @@ class _HomePageState extends State<HomePage> {
                   }
                 },
               ),
+              MainWebsiteView(),
               Container(height: 500, color: Colors.blueGrey),
               Container(height: 500, color: Colors.blueGrey),
               Container(height: 500, color: Colors.blueGrey),

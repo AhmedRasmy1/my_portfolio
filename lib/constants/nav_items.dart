@@ -4,7 +4,7 @@ List<String> navItems = ['Home', 'Skills', 'Projects', 'Blog', 'Contact'];
 List<IconData> navIcons = [
   Icons.home,
   Icons.code,
-  Icons.work,
+  Icons.apps,
   Icons.article,
   Icons.contact_mail,
 ];

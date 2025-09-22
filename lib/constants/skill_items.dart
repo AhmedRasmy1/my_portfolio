@@ -13,4 +13,5 @@ const List<Map> skillsIcon = [
   {'icon': 'assets/images/api_icon.png', 'name': 'API'},
   {'icon': 'assets/images/json_icon.png', 'name': 'JSON'},
   {'icon': 'assets/images/figma_icon.png', 'name': 'Figma'},
+  {'icon': 'assets/images/jira_icon.png', 'name': 'Jira'},
 ];

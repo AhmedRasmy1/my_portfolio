@@ -23,8 +23,8 @@ List<ProjectUtils> projectList = [
     title: "ServiceX",
     image: "assets/images/servicex_image.png",
     subtitle:
-        " Is a platform designed to simplify home repair services for Egyptian citizens. We connect users with skilled and reliable technicians for various household issues, such as electricity, plumbing, and more",
-    githubLink: "https://github.com/example/project1",
+        " Is a platform designed to simplify home repair services for Egyptian citizens.",
+    githubLink: "https://github.com/AhmedRasmy1/servicex",
   ),
   ProjectUtils(
     title: "Elmohandes",

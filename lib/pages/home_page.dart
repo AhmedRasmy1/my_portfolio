@@ -3,13 +3,14 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/colors.dart';
 import 'package:my_portfolio/constants/size.dart';
-import 'package:my_portfolio/utils/project_utils.dart';
+import 'package:my_portfolio/widgets/contact_widget.dart';
 import 'package:my_portfolio/widgets/drawer_mobil.dart';
+import 'package:my_portfolio/widgets/fotter_widget.dart';
 import 'package:my_portfolio/widgets/header_for_mobil.dart';
 import 'package:my_portfolio/widgets/header_for_website.dart';
 import 'package:my_portfolio/widgets/main_mobile_view.dart';
 import 'package:my_portfolio/widgets/main_website_view.dart';
-import 'package:my_portfolio/widgets/project_card_widget.dart';
+import 'package:my_portfolio/widgets/projects.dart';
 import 'package:my_portfolio/widgets/skills_website_view.dart';
 
 class HomePage extends StatefulWidget {
@@ -90,23 +91,13 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     SizedBox(height: 50),
-                    ConstrainedBox(
-                      constraints: BoxConstraints(maxWidth: 900),
-                      child: Wrap(
-                        spacing: 20,
-                        runSpacing: 20,
-                        alignment: WrapAlignment.center,
-                        children: [
-                          for (int i = 0; i < projectList.length; i++)
-                            ProjectCardWidget(project: projectList[i]),
-                        ],
-                      ),
-                    ),
+                    Projectss(),
                   ],
                 ),
               ),
-              Container(height: 500, color: Colors.blueGrey),
-              Container(height: 100, color: Colors.blueGrey),
+              SizedBox(height: 30),
+              ContactWidget(),
+              FooterWidget(),
             ],
           ),
         );

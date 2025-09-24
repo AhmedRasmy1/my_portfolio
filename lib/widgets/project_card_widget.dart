@@ -14,8 +14,8 @@ class ProjectCardWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       clipBehavior: Clip.antiAlias,
-      height: 280,
-      width: 250,
+      height: 290,
+      width: 260,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         color: CustomColor.bgLight2,
@@ -27,7 +27,7 @@ class ProjectCardWidget extends StatelessWidget {
           Image.asset(
             project.image,
             height: 140,
-            width: 250,
+            width: 260,
             fit: BoxFit.cover,
           ),
           Padding(
@@ -44,6 +44,8 @@ class ProjectCardWidget extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
             child: Text(
+              maxLines: 3,
+              overflow: TextOverflow.ellipsis,
               project.subtitle,
               style: TextStyle(
                 fontSize: 11,
@@ -84,7 +86,7 @@ class ProjectCardWidget extends StatelessWidget {
                       "assets/images/GitHub_icon.png",
                       height: 20,
                       width: 18,
-                      color: CustomColor.whiteSecondary,
+                      color: CustomColor.whitePrimary,
                     ),
                   ),
                 ),
@@ -105,7 +107,7 @@ class ProjectCardWidget extends StatelessWidget {
                       "assets/images/android_icon.png",
                       height: 20,
                       width: 20,
-                      color: CustomColor.whiteSecondary,
+                      color: CustomColor.whitePrimary,
                     ),
                   )
                 else

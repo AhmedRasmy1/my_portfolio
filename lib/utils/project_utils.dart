@@ -31,13 +31,13 @@ List<ProjectUtils> projectList = [
     image: "assets/images/elmohamndes_image.png",
     subtitle:
         "Developed Elmohandes for managing invoices and sales on both mobile and desktop platforms",
-    githubLink: "https://github.com/example/project1",
+    githubLink: "https://github.com/AhmedRasmy1/elmohandes",
   ),
   ProjectUtils(
     title: "Flowery",
     image: "assets/images/flowery_image.png",
     subtitle:
         "Developed an e-commerce application for browsing and purchasing flowers.",
-    githubLink: "https://github.com/example/project1",
+    githubLink: "https://github.com/AhmedRasmy1/flower_ecommerce",
   ),
 ];

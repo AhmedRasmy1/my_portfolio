@@ -89,7 +89,19 @@ class _HomePageState extends State<HomePage> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    ProjectCardWidget(project: projectList.first),
+                    SizedBox(height: 50),
+                    ConstrainedBox(
+                      constraints: BoxConstraints(maxWidth: 900),
+                      child: Wrap(
+                        spacing: 20,
+                        runSpacing: 20,
+                        alignment: WrapAlignment.center,
+                        children: [
+                          for (int i = 0; i < projectList.length; i++)
+                            ProjectCardWidget(project: projectList[i]),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),

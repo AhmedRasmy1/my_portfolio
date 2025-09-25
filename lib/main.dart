@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      title: 'Portfolio',
+      title: 'Ahmed\'s Portfolio',
       home: HomePage(),
     );
   }

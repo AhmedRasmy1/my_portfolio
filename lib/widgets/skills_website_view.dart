@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/constants/colors.dart';
-import 'package:my_portfolio/constants/skill_items.dart';
+import '../constants/colors.dart';
+import '../constants/skill_items.dart';
 
 class SkillsWebsiteView extends StatelessWidget {
   const SkillsWebsiteView({super.key});

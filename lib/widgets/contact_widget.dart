@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'dart:developer';
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/constants/colors.dart';
-import 'package:my_portfolio/widgets/custom_text_field.dart';
+import '../constants/colors.dart';
+import 'custom_text_field.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:http/http.dart' as http;
 

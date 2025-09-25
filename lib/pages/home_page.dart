@@ -1,18 +1,18 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/constants/colors.dart';
-import 'package:my_portfolio/constants/nav_items.dart';
-import 'package:my_portfolio/constants/size.dart';
-import 'package:my_portfolio/widgets/contact_widget.dart';
-import 'package:my_portfolio/widgets/drawer_mobil.dart';
-import 'package:my_portfolio/widgets/fotter_widget.dart';
-import 'package:my_portfolio/widgets/header_for_mobil.dart';
-import 'package:my_portfolio/widgets/header_for_website.dart';
-import 'package:my_portfolio/widgets/main_mobile_view.dart';
-import 'package:my_portfolio/widgets/main_website_view.dart';
-import 'package:my_portfolio/widgets/projects.dart';
-import 'package:my_portfolio/widgets/skills_website_view.dart';
+import '../constants/colors.dart';
+import '../constants/nav_items.dart';
+import '../constants/size.dart';
+import '../widgets/contact_widget.dart';
+import '../widgets/drawer_mobil.dart';
+import '../widgets/fotter_widget.dart';
+import '../widgets/header_for_mobil.dart';
+import '../widgets/header_for_website.dart';
+import '../widgets/main_mobile_view.dart';
+import '../widgets/main_website_view.dart';
+import '../widgets/projects.dart';
+import '../widgets/skills_website_view.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatefulWidget {

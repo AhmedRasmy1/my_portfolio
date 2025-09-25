@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/constants/colors.dart';
-import 'package:my_portfolio/constants/nav_items.dart';
-import 'package:my_portfolio/styles/style.dart';
-import 'package:my_portfolio/widgets/site_logo.dart';
+import '../constants/colors.dart';
+import '../constants/nav_items.dart';
+import '../styles/style.dart';
+import 'site_logo.dart';
 
 class HeaderForWebsite extends StatelessWidget {
   const HeaderForWebsite({super.key, required this.onNavItemTap});

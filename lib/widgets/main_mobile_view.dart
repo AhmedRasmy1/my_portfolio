@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/constants/colors.dart';
-import 'package:my_portfolio/pages/home_page.dart';
+import '../constants/colors.dart';
+import '../pages/home_page.dart';
 
 class MainMobileView extends StatelessWidget {
   const MainMobileView({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/utils/project_utils.dart';
-import 'package:my_portfolio/widgets/project_card_widget.dart';
+import '../utils/project_utils.dart';
+import 'project_card_widget.dart';
 
 class Projectss extends StatelessWidget {
   const Projectss({super.key});

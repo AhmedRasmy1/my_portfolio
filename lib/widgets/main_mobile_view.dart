@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/colors.dart';
+import 'package:my_portfolio/pages/home_page.dart';
 
 class MainMobileView extends StatelessWidget {
   const MainMobileView({super.key});
@@ -47,10 +48,17 @@ class MainMobileView extends StatelessWidget {
             width: 250,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
                 backgroundColor: CustomColor.yellowPrimary,
                 padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
               ),
-              onPressed: () {},
+              onPressed: () {
+                final homePageState = context
+                    .findAncestorStateOfType<HomePageState>();
+                homePageState?.scrollToSection(3);
+              },
               child: Text(
                 "GET IN TOUCH",
                 style: TextStyle(

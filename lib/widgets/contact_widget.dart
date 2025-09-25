@@ -242,11 +242,11 @@ class _ContactWidgetState extends State<ContactWidget> {
                 ),
               ),
               child: Text(
-                "Get In Touch",
+                "GET IN TOUCH",
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
-                  color: CustomColor.scaffoldBg,
+                  color: CustomColor.whitePrimary,
                 ),
               ),
             ),
@@ -261,6 +261,7 @@ class _ContactWidgetState extends State<ContactWidget> {
     final mobile = isMobile(context);
 
     return Container(
+      width: double.maxFinite,
       padding: const EdgeInsets.fromLTRB(25, 20, 25, 60),
       color: CustomColor.bgLight1,
       child: Column(
@@ -274,7 +275,6 @@ class _ContactWidgetState extends State<ContactWidget> {
             ),
           ),
           const SizedBox(height: 50),
-
           ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 1000),
             child: mobile

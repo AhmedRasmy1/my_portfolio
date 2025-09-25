@@ -5,8 +5,8 @@ import 'package:my_portfolio/styles/style.dart';
 import 'package:my_portfolio/widgets/site_logo.dart';
 
 class HeaderForWebsite extends StatelessWidget {
-  const HeaderForWebsite({super.key});
-
+  const HeaderForWebsite({super.key, required this.onNavItemTap});
+  final Function(int) onNavItemTap;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -22,7 +22,9 @@ class HeaderForWebsite extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(right: 20.0),
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  onNavItemTap(i);
+                },
                 child: Text(
                   navItems[i],
                   style: TextStyle(
